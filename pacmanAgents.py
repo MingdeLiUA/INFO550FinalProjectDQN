@@ -64,10 +64,12 @@ def scoreEvaluation(state):
 #<<<<<<<<<<<<<<<<<<<<<<<<<<<<Original File<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
 #>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>DQN Agent>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-"""Cite: https://github.com/tychovdo/PacmanDQN
-    Tensorflow V1 was used in tychovdo's project.
-    It is an obsolete NN platform, so I rewrite it using Pytorch
-    tychovdo's setup of the network inspired this project."""
+"""
+Cite: github.com/tychovdo/PacmanDQN
+Tensorflow V1 was used in tychovdo's project.
+It is an obsolete NN platform, so I rewrite it using Pytorch
+tychovdo's setup of the network inspired this project.
+"""
 #>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 import torch
 import numpy as np
@@ -78,7 +80,7 @@ import torch.nn.functional as F
 
 
 """Change this to T after training"""
-model_trained = False
+model_trained = True
 
 # -----------DQN Utils---------------------
 class util_DQN(game.Agent):
